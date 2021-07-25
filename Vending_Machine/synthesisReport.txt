@@ -1,0 +1,1939 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: vending_machine.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vending_machine.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vending_machine"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vending_machine
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\P4M152a\P4M152a\vending_machine.v" into library work
+Parsing module <vending_machine>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vending_machine>.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 117: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 118: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 119: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 120: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 121: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 122: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 123: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 124: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 125: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 126: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 127: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 128: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 129: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 130: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 131: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 132: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 133: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 134: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 135: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 136: Signal <item_counter> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 167: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 175: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 179: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 183: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 194: Signal <RESET> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 265: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 266: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 267: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 268: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 269: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 270: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 271: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 283: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 283: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 284: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 284: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 285: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 285: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 286: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 286: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 287: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 287: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 288: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 288: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 289: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 289: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 290: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 290: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 291: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 291: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 292: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 292: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 293: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 293: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 294: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 294: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 295: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 295: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 296: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 296: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 297: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 297: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 298: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 298: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 299: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 299: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 300: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 300: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 301: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 301: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:91 - "E:\P4M152a\P4M152a\vending_machine.v" Line 302: Signal <key1_temp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "E:\P4M152a\P4M152a\vending_machine.v" Line 302: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vending_machine>.
+    Related source file is "E:\P4M152a\P4M152a\vending_machine.v".
+        idle = 4'b0000
+        reloading = 4'b0001
+        trans = 4'b0010
+        read_key1 = 4'b0011
+        wait_key2 = 4'b0100
+        read_key2 = 4'b0101
+        check_code = 4'b0110
+        wait_trans = 4'b0111
+        vending = 4'b1000
+        check_door = 4'b1001
+    Found 3-bit register for signal <KEY_PRESS_counter>.
+    Found 3-bit register for signal <valid_counter>.
+    Found 3-bit register for signal <door_counter>.
+    Found 4-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 28                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 16                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_129_OUT<2:0>> created at line 167.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_131_OUT<2:0>> created at line 179.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_132_OUT<2:0>> created at line 183.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_184_OUT<3:0>> created at line 283.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_187_OUT<3:0>> created at line 284.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_190_OUT<3:0>> created at line 285.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_193_OUT<3:0>> created at line 286.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_196_OUT<3:0>> created at line 287.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_199_OUT<3:0>> created at line 288.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_202_OUT<3:0>> created at line 289.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_205_OUT<3:0>> created at line 290.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_208_OUT<3:0>> created at line 291.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_211_OUT<3:0>> created at line 292.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_214_OUT<3:0>> created at line 293.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_217_OUT<3:0>> created at line 294.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_220_OUT<3:0>> created at line 295.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_223_OUT<3:0>> created at line 296.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_226_OUT<3:0>> created at line 297.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_229_OUT<3:0>> created at line 298.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_232_OUT<3:0>> created at line 299.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_235_OUT<3:0>> created at line 300.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_238_OUT<3:0>> created at line 301.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_241_OUT<3:0>> created at line 302.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0902> created at line 225.
+WARNING:Xst:737 - Found 1-bit latch for signal <decrement_counter>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key2_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key2_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key2_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key2_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key1_temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key1_temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key1_temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <key1_temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <VEND>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <INVALID_SEL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <FAILED_TRAN>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <COST<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <COST<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <COST<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<19><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<19><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<19><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<19><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<18><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<18><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<18><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<18><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<17><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<17><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<17><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<17><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<16><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<16><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<16><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<16><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<15><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<15><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<15><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<15><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<14><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<14><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<14><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<14><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<13><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<13><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<13><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<13><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<12><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<12><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<12><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<12><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<11><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<11><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<11><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<11><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<10><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<10><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<10><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<10><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<9><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<9><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<9><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<9><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<8><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<8><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<8><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<8><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<7><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<7><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<7><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<7><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<6><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<6><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<6><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<6><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<5><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<5><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<5><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<5><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<4><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<4><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<4><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<4><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<3><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<3><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<3><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<3><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<2><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<2><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<2><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<2><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<1><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<1><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<1><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<1><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<0><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<0><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<0><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <item_counter<0><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 3-bit comparator greater for signal <GND_1_o_KEY_PRESS_counter[2]_LessThan_23_o> created at line 71
+    Found 3-bit comparator greater for signal <GND_1_o_valid_counter[2]_LessThan_32_o> created at line 89
+    Found 3-bit comparator greater for signal <GND_1_o_door_counter[2]_LessThan_45_o> created at line 99
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[0][3]_LessThan_70_o> created at line 117
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[1][3]_LessThan_73_o> created at line 118
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[2][3]_LessThan_76_o> created at line 119
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[3][3]_LessThan_79_o> created at line 120
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[4][3]_LessThan_82_o> created at line 121
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[5][3]_LessThan_85_o> created at line 122
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[6][3]_LessThan_88_o> created at line 123
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[7][3]_LessThan_91_o> created at line 124
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[8][3]_LessThan_94_o> created at line 125
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[9][3]_LessThan_97_o> created at line 126
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[10][3]_LessThan_100_o> created at line 127
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[11][3]_LessThan_103_o> created at line 128
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[12][3]_LessThan_106_o> created at line 129
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[13][3]_LessThan_109_o> created at line 130
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[14][3]_LessThan_112_o> created at line 131
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[15][3]_LessThan_115_o> created at line 132
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[16][3]_LessThan_118_o> created at line 133
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[17][3]_LessThan_121_o> created at line 134
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[18][3]_LessThan_124_o> created at line 135
+    Found 4-bit comparator greater for signal <GND_1_o_item_counter[19][3]_LessThan_127_o> created at line 136
+    Found 4-bit comparator lessequal for signal <n0171> created at line 265
+    Found 4-bit comparator lessequal for signal <n0174> created at line 266
+    Found 4-bit comparator lessequal for signal <n0179> created at line 267
+    Found 4-bit comparator lessequal for signal <n0181> created at line 267
+    Found 4-bit comparator lessequal for signal <n0185> created at line 268
+    Found 4-bit comparator lessequal for signal <n0188> created at line 269
+    Found 4-bit comparator lessequal for signal <n0190> created at line 269
+    Found 4-bit comparator lessequal for signal <n0195> created at line 270
+    Found 4-bit comparator lessequal for signal <n0197> created at line 270
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred  96 Latch(s).
+	inferred  32 Comparator(s).
+	inferred  28 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <vending_machine> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 3-bit subtractor                                      : 3
+ 4-bit subtractor                                      : 20
+# Registers                                            : 3
+ 3-bit register                                        : 3
+# Latches                                              : 96
+ 1-bit latch                                           : 96
+# Comparators                                          : 32
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 20
+ 4-bit comparator lessequal                            : 9
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 22
+ 1-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 3-bit subtractor                                      : 3
+ 4-bit subtractor                                      : 20
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 32
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 20
+ 4-bit comparator lessequal                            : 9
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 22
+ 1-bit 4-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+-------------------
+
+Optimizing unit <vending_machine> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vending_machine, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vending_machine.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 205
+#      LUT2                        : 2
+#      LUT3                        : 29
+#      LUT4                        : 10
+#      LUT5                        : 45
+#      LUT6                        : 115
+#      MUXF7                       : 4
+# FlipFlops/Latches                : 109
+#      FDR                         : 10
+#      FDS                         : 3
+#      LD                          : 9
+#      LDC                         : 87
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 10
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             103  out of  18224     0%  
+ Number of Slice LUTs:                  201  out of   9112     2%  
+    Number used as Logic:               201  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    209
+   Number with an unused Flip Flop:     106  out of    209    50%  
+   Number with an unused LUT:             8  out of    209     3%  
+   Number of fully used LUT-FF pairs:    95  out of    209    45%  
+   Number of unique control sets:        29
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+    IOB Flip Flops/Latches:               6
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------+----------------------------+-------+
+Clock Signal                                                                           | Clock buffer(FF name)      | Load  |
+---------------------------------------------------------------------------------------+----------------------------+-------+
+CLK                                                                                    | BUFGP                      | 13    |
+current_state[3]_PWR_16_o_Select_263_o(current_state[3]_PWR_16_o_Select_263_o:O)       | NONE(*)(COST_1)            | 3     |
+current_state[3]_GND_18_o_Select_266_o(current_state[3]_GND_18_o_Select_266_o:O)       | NONE(*)(item_counter<19>_2)| 4     |
+current_state[3]_GND_22_o_Select_270_o(current_state[3]_GND_22_o_Select_270_o1:O)      | NONE(*)(item_counter<18>_3)| 4     |
+current_state[3]_GND_26_o_Select_274_o(current_state[3]_GND_26_o_Select_274_o1:O)      | NONE(*)(item_counter<17>_1)| 4     |
+current_state[3]_GND_30_o_Select_278_o(current_state[3]_GND_30_o_Select_278_o1:O)      | NONE(*)(item_counter<16>_3)| 4     |
+current_state[3]_GND_34_o_Select_282_o(current_state[3]_GND_34_o_Select_282_o1:O)      | NONE(*)(item_counter<15>_1)| 4     |
+current_state[3]_GND_38_o_Select_286_o(current_state[3]_GND_38_o_Select_286_o:O)       | NONE(*)(item_counter<14>_2)| 4     |
+current_state[3]_GND_42_o_Select_290_o(current_state[3]_GND_42_o_Select_290_o1:O)      | NONE(*)(item_counter<13>_3)| 4     |
+current_state[3]_GND_46_o_Select_294_o(current_state[3]_GND_46_o_Select_294_o1:O)      | NONE(*)(item_counter<12>_1)| 4     |
+current_state[3]_GND_50_o_Select_298_o(current_state[3]_GND_50_o_Select_298_o3:O)      | NONE(*)(item_counter<11>_2)| 4     |
+current_state[3]_GND_54_o_Select_302_o(current_state[3]_GND_54_o_Select_302_o1:O)      | NONE(*)(item_counter<10>_1)| 4     |
+current_state[3]_GND_58_o_Select_306_o(current_state[3]_GND_58_o_Select_306_o1:O)      | NONE(*)(item_counter<9>_2) | 4     |
+current_state[3]_GND_62_o_Select_310_o(current_state[3]_GND_62_o_Select_310_o1:O)      | NONE(*)(item_counter<8>_3) | 4     |
+current_state[3]_GND_66_o_Select_314_o(current_state[3]_GND_66_o_Select_314_o1:O)      | NONE(*)(item_counter<7>_1) | 4     |
+current_state[3]_GND_70_o_Select_318_o(current_state[3]_GND_70_o_Select_318_o1:O)      | NONE(*)(item_counter<6>_2) | 4     |
+current_state[3]_GND_74_o_Select_322_o(current_state[3]_GND_74_o_Select_322_o1:O)      | NONE(*)(item_counter<5>_3) | 4     |
+current_state[3]_GND_78_o_Select_326_o(current_state[3]_GND_78_o_Select_326_o2:O)      | NONE(*)(item_counter<4>_2) | 4     |
+current_state[3]_GND_82_o_Select_330_o(current_state[3]_GND_82_o_Select_330_o1:O)      | NONE(*)(item_counter<3>_3) | 4     |
+current_state[3]_GND_86_o_Select_334_o(current_state[3]_GND_86_o_Select_334_o1:O)      | NONE(*)(item_counter<2>_1) | 4     |
+current_state[3]_GND_90_o_Select_338_o(current_state[3]_GND_90_o_Select_338_o1:O)      | NONE(*)(item_counter<1>_2) | 4     |
+current_state[3]_GND_94_o_Select_342_o(current_state[3]_GND_94_o_Select_342_o1:O)      | NONE(*)(item_counter<0>_3) | 4     |
+GND_1_o_GND_1_o_OR_51_o(GND_1_o_GND_1_o_OR_51_o2:O)                                    | NONE(*)(valid)             | 1     |
+_n0905(_n09051:O)                                                                      | NONE(*)(VEND)              | 1     |
+current_state[3]_PWR_15_o_Select_262_o(current_state[3]_PWR_15_o_Select_262_o1:O)      | NONE(*)(FAILED_TRAN)       | 1     |
+current_state_FSM_FFd3-In3(current_state_FSM_FFd3-In31:O)                              | NONE(*)(key2_temp_3)       | 4     |
+current_state[3]_PWR_1_o_select_139_OUT<2>3(current_state_FSM_FFd2-In31:O)             | NONE(*)(key1_temp_3)       | 4     |
+current_state[3]_GND_2_o_Mux_55_o(Mmux_current_state[3]_GND_2_o_Mux_55_o11:O)          | NONE(*)(decrement_counter) | 1     |
+current_state[3]_PWR_14_o_Select_261_o(Mmux_current_state[3]_PWR_14_o_Select_261_o11:O)| NONE(*)(INVALID_SEL)       | 1     |
+---------------------------------------------------------------------------------------+----------------------------+-------+
+(*) These 28 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.941ns (Maximum Frequency: 253.724MHz)
+   Minimum input arrival time before clock: 4.505ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.941ns (frequency: 253.724MHz)
+  Total number of paths / destination ports: 152 / 13
+-------------------------------------------------------------------------
+Delay:               3.941ns (Levels of Logic = 3)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: current_state_FSM_FFd4 to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            102   0.447   1.883  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT5:I4->O            2   0.205   0.961  current_state_FSM_FFd2-In121 (current_state_FSM_FFd2-In12)
+     LUT6:I1->O            1   0.203   0.000  current_state_FSM_FFd4-In3_G (N96)
+     MUXF7:I1->O           1   0.140   0.000  current_state_FSM_FFd4-In3 (current_state_FSM_FFd4-In)
+     FDR:D                     0.102          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      3.941ns (1.097ns logic, 2.844ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_18_o_Select_266_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<19>_3 (LATCH)
+  Destination:       item_counter<19>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_18_o_Select_266_o falling
+  Destination Clock: current_state[3]_GND_18_o_Select_266_o falling
+
+  Data Path: item_counter<19>_3 to item_counter<19>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<19>_3 (item_counter<19>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<1> (current_state[3]_item_counter[19][3]_select_257_OUT<79>)
+     LDC:D                     0.037          item_counter<19>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_22_o_Select_270_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<18>_3 (LATCH)
+  Destination:       item_counter<18>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_22_o_Select_270_o falling
+  Destination Clock: current_state[3]_GND_22_o_Select_270_o falling
+
+  Data Path: item_counter<18>_3 to item_counter<18>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<18>_3 (item_counter<18>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<5> (current_state[3]_item_counter[19][3]_select_257_OUT<75>)
+     LDC:D                     0.037          item_counter<18>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_26_o_Select_274_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<17>_3 (LATCH)
+  Destination:       item_counter<17>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_26_o_Select_274_o falling
+  Destination Clock: current_state[3]_GND_26_o_Select_274_o falling
+
+  Data Path: item_counter<17>_3 to item_counter<17>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<17>_3 (item_counter<17>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<9> (current_state[3]_item_counter[19][3]_select_257_OUT<71>)
+     LDC:D                     0.037          item_counter<17>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_30_o_Select_278_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<16>_3 (LATCH)
+  Destination:       item_counter<16>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_30_o_Select_278_o falling
+  Destination Clock: current_state[3]_GND_30_o_Select_278_o falling
+
+  Data Path: item_counter<16>_3 to item_counter<16>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<16>_3 (item_counter<16>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<13> (current_state[3]_item_counter[19][3]_select_257_OUT<67>)
+     LDC:D                     0.037          item_counter<16>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_34_o_Select_282_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<15>_3 (LATCH)
+  Destination:       item_counter<15>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_34_o_Select_282_o falling
+  Destination Clock: current_state[3]_GND_34_o_Select_282_o falling
+
+  Data Path: item_counter<15>_3 to item_counter<15>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<15>_3 (item_counter<15>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<17> (current_state[3]_item_counter[19][3]_select_257_OUT<63>)
+     LDC:D                     0.037          item_counter<15>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_38_o_Select_286_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<14>_3 (LATCH)
+  Destination:       item_counter<14>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_38_o_Select_286_o falling
+  Destination Clock: current_state[3]_GND_38_o_Select_286_o falling
+
+  Data Path: item_counter<14>_3 to item_counter<14>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<14>_3 (item_counter<14>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<21> (current_state[3]_item_counter[19][3]_select_257_OUT<59>)
+     LDC:D                     0.037          item_counter<14>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_42_o_Select_290_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<13>_3 (LATCH)
+  Destination:       item_counter<13>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_42_o_Select_290_o falling
+  Destination Clock: current_state[3]_GND_42_o_Select_290_o falling
+
+  Data Path: item_counter<13>_3 to item_counter<13>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<13>_3 (item_counter<13>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<25> (current_state[3]_item_counter[19][3]_select_257_OUT<55>)
+     LDC:D                     0.037          item_counter<13>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_46_o_Select_294_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<12>_3 (LATCH)
+  Destination:       item_counter<12>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_46_o_Select_294_o falling
+  Destination Clock: current_state[3]_GND_46_o_Select_294_o falling
+
+  Data Path: item_counter<12>_3 to item_counter<12>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<12>_3 (item_counter<12>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<29> (current_state[3]_item_counter[19][3]_select_257_OUT<51>)
+     LDC:D                     0.037          item_counter<12>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_50_o_Select_298_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<11>_3 (LATCH)
+  Destination:       item_counter<11>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_50_o_Select_298_o falling
+  Destination Clock: current_state[3]_GND_50_o_Select_298_o falling
+
+  Data Path: item_counter<11>_3 to item_counter<11>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<11>_3 (item_counter<11>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<33> (current_state[3]_item_counter[19][3]_select_257_OUT<47>)
+     LDC:D                     0.037          item_counter<11>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_54_o_Select_302_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<10>_3 (LATCH)
+  Destination:       item_counter<10>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_54_o_Select_302_o falling
+  Destination Clock: current_state[3]_GND_54_o_Select_302_o falling
+
+  Data Path: item_counter<10>_3 to item_counter<10>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<10>_3 (item_counter<10>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<37> (current_state[3]_item_counter[19][3]_select_257_OUT<43>)
+     LDC:D                     0.037          item_counter<10>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_58_o_Select_306_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<9>_3 (LATCH)
+  Destination:       item_counter<9>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_58_o_Select_306_o falling
+  Destination Clock: current_state[3]_GND_58_o_Select_306_o falling
+
+  Data Path: item_counter<9>_3 to item_counter<9>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<9>_3 (item_counter<9>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<41> (current_state[3]_item_counter[19][3]_select_257_OUT<39>)
+     LDC:D                     0.037          item_counter<9>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_62_o_Select_310_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<8>_3 (LATCH)
+  Destination:       item_counter<8>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_62_o_Select_310_o falling
+  Destination Clock: current_state[3]_GND_62_o_Select_310_o falling
+
+  Data Path: item_counter<8>_3 to item_counter<8>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<8>_3 (item_counter<8>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<45> (current_state[3]_item_counter[19][3]_select_257_OUT<35>)
+     LDC:D                     0.037          item_counter<8>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_66_o_Select_314_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<7>_3 (LATCH)
+  Destination:       item_counter<7>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_66_o_Select_314_o falling
+  Destination Clock: current_state[3]_GND_66_o_Select_314_o falling
+
+  Data Path: item_counter<7>_3 to item_counter<7>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<7>_3 (item_counter<7>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<49> (current_state[3]_item_counter[19][3]_select_257_OUT<31>)
+     LDC:D                     0.037          item_counter<7>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_70_o_Select_318_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<6>_3 (LATCH)
+  Destination:       item_counter<6>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_70_o_Select_318_o falling
+  Destination Clock: current_state[3]_GND_70_o_Select_318_o falling
+
+  Data Path: item_counter<6>_3 to item_counter<6>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<6>_3 (item_counter<6>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<53> (current_state[3]_item_counter[19][3]_select_257_OUT<27>)
+     LDC:D                     0.037          item_counter<6>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_74_o_Select_322_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<5>_3 (LATCH)
+  Destination:       item_counter<5>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_74_o_Select_322_o falling
+  Destination Clock: current_state[3]_GND_74_o_Select_322_o falling
+
+  Data Path: item_counter<5>_3 to item_counter<5>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<5>_3 (item_counter<5>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<57> (current_state[3]_item_counter[19][3]_select_257_OUT<23>)
+     LDC:D                     0.037          item_counter<5>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_78_o_Select_326_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<4>_3 (LATCH)
+  Destination:       item_counter<4>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_78_o_Select_326_o falling
+  Destination Clock: current_state[3]_GND_78_o_Select_326_o falling
+
+  Data Path: item_counter<4>_3 to item_counter<4>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<4>_3 (item_counter<4>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<61> (current_state[3]_item_counter[19][3]_select_257_OUT<19>)
+     LDC:D                     0.037          item_counter<4>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_82_o_Select_330_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<3>_3 (LATCH)
+  Destination:       item_counter<3>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_82_o_Select_330_o falling
+  Destination Clock: current_state[3]_GND_82_o_Select_330_o falling
+
+  Data Path: item_counter<3>_3 to item_counter<3>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<3>_3 (item_counter<3>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<65> (current_state[3]_item_counter[19][3]_select_257_OUT<15>)
+     LDC:D                     0.037          item_counter<3>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_86_o_Select_334_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<2>_3 (LATCH)
+  Destination:       item_counter<2>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_86_o_Select_334_o falling
+  Destination Clock: current_state[3]_GND_86_o_Select_334_o falling
+
+  Data Path: item_counter<2>_3 to item_counter<2>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<2>_3 (item_counter<2>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<69> (current_state[3]_item_counter[19][3]_select_257_OUT<11>)
+     LDC:D                     0.037          item_counter<2>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_90_o_Select_338_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<1>_3 (LATCH)
+  Destination:       item_counter<1>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_90_o_Select_338_o falling
+  Destination Clock: current_state[3]_GND_90_o_Select_338_o falling
+
+  Data Path: item_counter<1>_3 to item_counter<1>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<1>_3 (item_counter<1>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<73> (current_state[3]_item_counter[19][3]_select_257_OUT<7>)
+     LDC:D                     0.037          item_counter<1>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'current_state[3]_GND_94_o_Select_342_o'
+  Clock period: 1.699ns (frequency: 588.495MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               1.699ns (Levels of Logic = 1)
+  Source:            item_counter<0>_3 (LATCH)
+  Destination:       item_counter<0>_3 (LATCH)
+  Source Clock:      current_state[3]_GND_94_o_Select_342_o falling
+  Destination Clock: current_state[3]_GND_94_o_Select_342_o falling
+
+  Data Path: item_counter<0>_3 to item_counter<0>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.498   0.961  item_counter<0>_3 (item_counter<0>_3)
+     LUT6:I1->O            1   0.203   0.000  current_state[3]_item_counter[19][3]_select_257_OUT<77> (current_state[3]_item_counter[19][3]_select_257_OUT<3>)
+     LDC:D                     0.037          item_counter<0>_3
+    ----------------------------------------
+    Total                      1.699ns (0.738ns logic, 0.961ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 32 / 17
+-------------------------------------------------------------------------
+Offset:              4.505ns (Levels of Logic = 4)
+  Source:            CARD_IN (PAD)
+  Destination:       current_state_FSM_FFd3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CARD_IN to current_state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  CARD_IN_IBUF (CARD_IN_IBUF)
+     LUT2:I0->O            1   0.203   0.944  GND_1_o_KEY_PRESS_counter[2]_LessThan_23_o1_SW0 (N91)
+     LUT6:I0->O            1   0.203   0.944  current_state_FSM_FFd3-In1 (current_state_FSM_FFd3-In1)
+     LUT6:I0->O            1   0.203   0.000  current_state_FSM_FFd3-In2 (current_state_FSM_FFd3-In)
+     FDR:D                     0.102          current_state_FSM_FFd3
+    ----------------------------------------
+    Total                      4.505ns (1.933ns logic, 2.572ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_PWR_16_o_Select_263_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       COST_1 (LATCH)
+  Destination Clock: current_state[3]_PWR_16_o_Select_263_o falling
+
+  Data Path: RESET to COST_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          COST_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_18_o_Select_266_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<19>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_18_o_Select_266_o falling
+
+  Data Path: RESET to item_counter<19>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<19>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_22_o_Select_270_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<18>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_22_o_Select_270_o falling
+
+  Data Path: RESET to item_counter<18>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<18>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_26_o_Select_274_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<17>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_26_o_Select_274_o falling
+
+  Data Path: RESET to item_counter<17>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<17>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_30_o_Select_278_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<16>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_30_o_Select_278_o falling
+
+  Data Path: RESET to item_counter<16>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<16>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_34_o_Select_282_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<15>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_34_o_Select_282_o falling
+
+  Data Path: RESET to item_counter<15>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<15>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_38_o_Select_286_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<14>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_38_o_Select_286_o falling
+
+  Data Path: RESET to item_counter<14>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<14>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_42_o_Select_290_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<13>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_42_o_Select_290_o falling
+
+  Data Path: RESET to item_counter<13>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<13>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_46_o_Select_294_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<12>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_46_o_Select_294_o falling
+
+  Data Path: RESET to item_counter<12>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<12>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_50_o_Select_298_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<11>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_50_o_Select_298_o falling
+
+  Data Path: RESET to item_counter<11>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<11>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_54_o_Select_302_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<10>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_54_o_Select_302_o falling
+
+  Data Path: RESET to item_counter<10>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<10>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_58_o_Select_306_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<9>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_58_o_Select_306_o falling
+
+  Data Path: RESET to item_counter<9>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<9>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_62_o_Select_310_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<8>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_62_o_Select_310_o falling
+
+  Data Path: RESET to item_counter<8>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<8>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_66_o_Select_314_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<7>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_66_o_Select_314_o falling
+
+  Data Path: RESET to item_counter<7>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<7>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_70_o_Select_318_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<6>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_70_o_Select_318_o falling
+
+  Data Path: RESET to item_counter<6>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<6>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_74_o_Select_322_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<5>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_74_o_Select_322_o falling
+
+  Data Path: RESET to item_counter<5>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<5>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_78_o_Select_326_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<4>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_78_o_Select_326_o falling
+
+  Data Path: RESET to item_counter<4>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<4>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_82_o_Select_330_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<3>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_82_o_Select_330_o falling
+
+  Data Path: RESET to item_counter<3>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<3>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_86_o_Select_334_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<2>_1 (LATCH)
+  Destination Clock: current_state[3]_GND_86_o_Select_334_o falling
+
+  Data Path: RESET to item_counter<2>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<2>_1
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_90_o_Select_338_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<1>_2 (LATCH)
+  Destination Clock: current_state[3]_GND_90_o_Select_338_o falling
+
+  Data Path: RESET to item_counter<1>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<1>_2
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_GND_94_o_Select_342_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       item_counter<0>_3 (LATCH)
+  Destination Clock: current_state[3]_GND_94_o_Select_342_o falling
+
+  Data Path: RESET to item_counter<0>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          item_counter<0>_3
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0905'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       VEND (LATCH)
+  Destination Clock: _n0905 falling
+
+  Data Path: RESET to VEND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          VEND
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_PWR_15_o_Select_262_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       FAILED_TRAN (LATCH)
+  Destination Clock: current_state[3]_PWR_15_o_Select_262_o falling
+
+  Data Path: RESET to FAILED_TRAN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          FAILED_TRAN
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state_FSM_FFd3-In3'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.875ns (Levels of Logic = 1)
+  Source:            ITEM_CODE<3> (PAD)
+  Destination:       key2_temp_3 (LATCH)
+  Destination Clock: current_state_FSM_FFd3-In3 falling
+
+  Data Path: ITEM_CODE<3> to key2_temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  ITEM_CODE_3_IBUF (ITEM_CODE_3_IBUF)
+     LD:D                      0.037          key2_temp_3
+    ----------------------------------------
+    Total                      1.875ns (1.259ns logic, 0.616ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_PWR_1_o_select_139_OUT<2>3'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.875ns (Levels of Logic = 1)
+  Source:            ITEM_CODE<3> (PAD)
+  Destination:       key1_temp_3 (LATCH)
+  Destination Clock: current_state[3]_PWR_1_o_select_139_OUT<2>3 falling
+
+  Data Path: ITEM_CODE<3> to key1_temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  ITEM_CODE_3_IBUF (ITEM_CODE_3_IBUF)
+     LD:D                      0.037          key1_temp_3
+    ----------------------------------------
+    Total                      1.875ns (1.259ns logic, 0.616ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[3]_PWR_14_o_Select_261_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.522ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       INVALID_SEL (LATCH)
+  Destination Clock: current_state[3]_PWR_14_o_Select_261_o falling
+
+  Data Path: RESET to INVALID_SEL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            99   1.222   1.870  RESET_IBUF (RESET_IBUF)
+     LDC:CLR                   0.430          INVALID_SEL
+    ----------------------------------------
+    Total                      3.522ns (1.652ns logic, 1.870ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state[3]_PWR_16_o_Select_263_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            COST_2 (LATCH)
+  Destination:       COST<2> (PAD)
+  Source Clock:      current_state[3]_PWR_16_o_Select_263_o falling
+
+  Data Path: COST_2 to COST<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  COST_2 (COST_2)
+     OBUF:I->O                 2.571          COST_2_OBUF (COST<2>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n0905'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            VEND (LATCH)
+  Destination:       VEND (PAD)
+  Source Clock:      _n0905 falling
+
+  Data Path: VEND to VEND
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  VEND (VEND_OBUF)
+     OBUF:I->O                 2.571          VEND_OBUF (VEND)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state[3]_PWR_14_o_Select_261_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            INVALID_SEL (LATCH)
+  Destination:       INVALID_SEL (PAD)
+  Source Clock:      current_state[3]_PWR_14_o_Select_261_o falling
+
+  Data Path: INVALID_SEL to INVALID_SEL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  INVALID_SEL (INVALID_SEL_OBUF)
+     OBUF:I->O                 2.571          INVALID_SEL_OBUF (INVALID_SEL)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state[3]_PWR_15_o_Select_262_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            FAILED_TRAN (LATCH)
+  Destination:       FAILED_TRAN (PAD)
+  Source Clock:      current_state[3]_PWR_15_o_Select_262_o falling
+
+  Data Path: FAILED_TRAN to FAILED_TRAN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  FAILED_TRAN (FAILED_TRAN_OBUF)
+     OBUF:I->O                 2.571          FAILED_TRAN_OBUF (FAILED_TRAN)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+CLK                    |    3.941|         |         |         |
+GND_1_o_GND_1_o_OR_51_o|         |    2.825|         |         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GND_1_o_GND_1_o_OR_51_o
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+current_state[3]_GND_18_o_Select_266_o     |         |         |   16.581|         |
+current_state[3]_GND_22_o_Select_270_o     |         |         |   15.893|         |
+current_state[3]_GND_26_o_Select_274_o     |         |         |   15.108|         |
+current_state[3]_GND_30_o_Select_278_o     |         |         |   14.323|         |
+current_state[3]_GND_34_o_Select_282_o     |         |         |   13.538|         |
+current_state[3]_GND_38_o_Select_286_o     |         |         |   12.753|         |
+current_state[3]_GND_42_o_Select_290_o     |         |         |   11.969|         |
+current_state[3]_GND_46_o_Select_294_o     |         |         |   11.184|         |
+current_state[3]_GND_50_o_Select_298_o     |         |         |   10.399|         |
+current_state[3]_GND_54_o_Select_302_o     |         |         |    9.614|         |
+current_state[3]_GND_58_o_Select_306_o     |         |         |    8.829|         |
+current_state[3]_GND_62_o_Select_310_o     |         |         |    8.044|         |
+current_state[3]_GND_66_o_Select_314_o     |         |         |    7.260|         |
+current_state[3]_GND_70_o_Select_318_o     |         |         |    6.475|         |
+current_state[3]_GND_74_o_Select_322_o     |         |         |    5.690|         |
+current_state[3]_GND_78_o_Select_326_o     |         |         |    4.905|         |
+current_state[3]_GND_82_o_Select_330_o     |         |         |    4.120|         |
+current_state[3]_GND_86_o_Select_334_o     |         |         |    3.335|         |
+current_state[3]_GND_90_o_Select_338_o     |         |         |    2.550|         |
+current_state[3]_GND_94_o_Select_342_o     |         |         |    1.766|         |
+current_state[3]_PWR_1_o_select_139_OUT<2>3|         |         |   17.986|         |
+current_state_FSM_FFd3-In3                 |         |         |   18.727|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0905
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.590|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_18_o_Select_266_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_18_o_Select_266_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_22_o_Select_270_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_22_o_Select_270_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_26_o_Select_274_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_26_o_Select_274_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_2_o_Mux_55_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.800|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_30_o_Select_278_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_30_o_Select_278_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_34_o_Select_282_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_34_o_Select_282_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_38_o_Select_286_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_38_o_Select_286_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_42_o_Select_290_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_42_o_Select_290_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_46_o_Select_294_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_46_o_Select_294_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_50_o_Select_298_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_50_o_Select_298_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_54_o_Select_302_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_54_o_Select_302_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_58_o_Select_306_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_58_o_Select_306_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_62_o_Select_310_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_62_o_Select_310_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_66_o_Select_314_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_66_o_Select_314_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_70_o_Select_318_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_70_o_Select_318_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_74_o_Select_322_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_74_o_Select_322_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_78_o_Select_326_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_78_o_Select_326_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_82_o_Select_330_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_82_o_Select_330_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_86_o_Select_334_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_86_o_Select_334_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_90_o_Select_338_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_90_o_Select_338_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_GND_94_o_Select_342_o
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+CLK                                   |         |         |    4.399|         |
+current_state[3]_GND_94_o_Select_342_o|         |         |    1.699|         |
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_PWR_14_o_Select_261_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.071|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_PWR_15_o_Select_262_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    2.800|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock current_state[3]_PWR_16_o_Select_263_o
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+CLK                                        |         |         |    2.914|         |
+current_state[3]_PWR_1_o_select_139_OUT<2>3|         |         |    4.392|         |
+current_state_FSM_FFd3-In3                 |         |         |    3.270|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.07 secs
+ 
+--> 
+
+Total memory usage is 4538824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  168 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
