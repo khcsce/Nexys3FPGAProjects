@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/P4M152a/parking_meter/testbench_105123806_isim_beh.exe" -prj "E:/P4M152a/parking_meter/testbench_105123806_beh.prj" "work.testbench_105123806" "work.glbl" 
