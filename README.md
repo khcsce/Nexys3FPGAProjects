@@ -1,4 +1,3 @@
 # Nexys3FPGAProjects
 
-#Vendming Machine
-#Parking Meter
+Vendming Machine and Parking Meter simulation on a Nexys3 FPGA
